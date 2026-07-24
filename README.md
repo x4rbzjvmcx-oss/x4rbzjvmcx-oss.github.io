@@ -1,28 +1,38 @@
- # Ruoxi Sun — Personal Website
+ # 孙若曦 个人网站
  
  个人主页，集中展示个人背景、专业技能、项目经历和学生工作成果。
  
- ## Live Site
+ ## 🌐 网站地址
  [https://x4rbzjvmcx-oss.github.io/](https://x4rbzjvmcx-oss.github.io/)
  
- ## Template
- [Modern Resume Theme](https://github.com/sproogen/modern-resume-theme)
+ ## 📋 项目说明
+ 纯静态HTML个人简历网站，采用薄荷绿+清透蓝清新风格，包含响应式设计，适配桌面端和移动端。
  
- ## Customizations
- - Replaced all placeholder content with real information (Ruoxi Sun)
- - 3 real projects (HR Analytics, ML Research, Social Practice)
- - 2 leadership experiences (Education Support, Party Building)
- - Education: Shenzhen University — IMIS
- - Color scheme: Mint Green (#6ABF8B) + Clear Blue (#4A90D9)
- - Added docs/ (PRD, Design, Checklist) and report/
+ ### 内容板块
+ - **关于我** — 个人简介、高光成绩、核心技能
+ - **项目经历** — 员工离职分析、消费补贴研究
+ - **荣誉奖项** — 百度之星金奖、统计建模省三等奖
+ - **社会实践** — "萤火虫计划"支教
+ - **学生工作** — 支教部长、秘书部部长
+ - **教育背景** — 深圳大学 信息管理与信息系统
  
- ## Privacy
- This repository does not include:
- - Phone number, home address, or ID information
- - API keys, tokens, or passwords
+ ### 交互功能
+ - 滚动淡入动画
+ - 回到顶部按钮
  
- ## Local Development
- ```bash
- bundle install
- bundle exec jekyll serve
- ```
+ ## 🛠 技术栈
+ - 纯 HTML + CSS + JavaScript
+ - GitHub Pages 托管
+ - 无框架、无依赖
+ 
+ ## 📁 项目文件
+ | 文件 | 说明 |
+ |------|------|
+ | `index.html` | 主页面（全部内容） |
+ | `docs/` | PRD、设计说明、验收清单 |
+ | `report/` | 最终报告 |
+ | `screenshots/` | 桌面端+手机端截图 |
+ | `images/` | 个人头像 |
+ 
+ ## 🔒 隐私声明
+ 本仓库不包含手机号、住址、身份证等个人隐私信息。
