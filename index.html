@@ -1,0 +1,296 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>孙若曦 | 信息管理与信息系统 | HR-AI 实习生</title>
+<style>
+/* ========== RESET & BASE ========== */
+*, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+body {
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, 'Noto Sans SC', sans-serif;
+  background: #F8F9FA; color: #2D3436; line-height: 1.7;
+}
+a { color: #4A90D9; text-decoration: none; }
+a:hover { text-decoration: underline; }
+img { max-width: 100%; height: auto; }
+
+/* ========== HEADER ========== */
+.header-wrapper {
+  background: linear-gradient(135deg, #6ABF8B 0%, #4A90D9 100%);
+  color: #fff; padding: 3rem 1rem;
+}
+.header-wrapper .container { max-width: 1000px; margin: 0 auto; display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 1rem; }
+.header-left h1 { font-size: 2rem; font-weight: 700; margin-bottom: 0.3rem; }
+.header-left h2 { font-size: 1rem; font-weight: 400; opacity: 0.9; }
+.header-right { text-align: right; }
+.header-right a { color: #fff; font-size: 1.3rem; margin-left: 0.8rem; display: inline-block; }
+.header-right .email { font-size: 0.85rem; margin-top: 0.5rem; }
+.header-right .email a { color: #fff; font-size: 0.85rem; }
+
+/* ========== MAIN ========== */
+main { max-width: 1000px; margin: 0 auto; padding: 2rem 1rem; }
+.section { margin-bottom: 2.5rem; transition: opacity 0.6s, transform 0.6s; }
+.section-title { font-size: 1.4rem; color: #2D3436; border-bottom: 3px solid #6ABF8B; padding-bottom: 0.5rem; margin-bottom: 1.2rem; }
+
+/* ========== ABOUT ========== */
+.about-row { display: flex; gap: 2rem; align-items: flex-start; flex-wrap: wrap; }
+.about-photo { width: 180px; height: 180px; border-radius: 8px; object-fit: cover; flex-shrink: 0; }
+.about-text { flex: 1; min-width: 250px; }
+.about-text p { margin-bottom: 0.6rem; }
+mark { background: #D4EDDA; color: #2D3436; padding: 0.1em 0.4em; border-radius: 3px; font-size: 0.9rem; display: inline-block; margin: 0.15rem; }
+
+/* ========== CARDS ========== */
+.card {
+  background: #fff; border: 1px solid #E8ECF1; border-radius: 8px; padding: 1.2rem 1.5rem;
+  margin-bottom: 1rem; transition: transform 0.2s, box-shadow 0.2s;
+}
+.card:hover { transform: translateY(-3px); box-shadow: 0 4px 15px rgba(0,0,0,0.08); }
+.card-row { display: flex; gap: 1.5rem; flex-wrap: wrap; }
+.card-left { min-width: 200px; flex-shrink: 0; }
+.card-left h4 { font-size: 1.05rem; color: #2D3436; margin-bottom: 0.3rem; }
+.card-left .sub { font-weight: 600; color: #555; font-size: 0.9rem; }
+.card-left .date { color: #888; font-size: 0.85rem; }
+.card-left .link { font-size: 0.85rem; word-break: break-all; }
+.card-right { flex: 1; min-width: 200px; }
+.card-right .quote { color: #636E72; font-style: italic; border-left: 3px solid #6ABF8B; padding-left: 0.8rem; margin-bottom: 0.5rem; font-size: 0.9rem; }
+.card-right p { margin-bottom: 0.4rem; font-size: 0.95rem; }
+
+/* ========== FOOTER ========== */
+footer {
+  background: #2D3436; color: #F8F9FA; text-align: center; padding: 1.5rem;
+  font-size: 0.85rem;
+}
+footer a { color: #6ABF8B; }
+
+/* ========== BACK TO TOP ========== */
+#backToTop {
+  position: fixed; bottom: 30px; right: 30px; width: 45px; height: 45px;
+  border-radius: 50%; border: none; background: #6ABF8B; color: #fff;
+  font-size: 1.3rem; cursor: pointer; opacity: 0; transform: translateY(20px);
+  transition: opacity 0.3s, transform 0.3s; z-index: 999;
+  box-shadow: 0 2px 10px rgba(0,0,0,0.15);
+}
+#backToTop.visible { opacity: 1; transform: translateY(0); }
+
+/* ========== RESPONSIVE ========== */
+@media (max-width: 768px) {
+  .header-wrapper .container { flex-direction: column; text-align: center; }
+  .header-right { text-align: center; }
+  .header-right a { margin: 0 0.4rem; }
+  .about-row { flex-direction: column; align-items: center; text-align: center; }
+  .about-photo { width: 140px; height: 140px; }
+  .card-row { flex-direction: column; }
+  .card-left { min-width: 100%; }
+  .section-title { font-size: 1.2rem; }
+  #backToTop { bottom: 20px; right: 20px; width: 40px; height: 40px; font-size: 1.1rem; }
+}
+</style>
+</head>
+<body>
+
+<!-- ========== HEADER ========== -->
+<div class="header-wrapper">
+  <div class="container">
+    <div class="header-left">
+      <h1>孙若曦</h1>
+      <h2>信息管理与信息系统 | HR-AI 实习生</h2>
+    </div>
+    <div class="header-right">
+      <a href="https://github.com/x4rbzjvmcx-oss" target="_blank" title="GitHub">
+        <svg height="28" viewBox="0 0 16 16" fill="white"><path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.013 8.013 0 0016 8c0-4.42-3.58-8-8-8z"/></svg>
+      </a>
+      <div class="email"><a href="mailto:2024363037@mails.szu.edu.cn">2024363037@mails.szu.edu.cn</a></div>
+    </div>
+  </div>
+</div>
+
+<!-- ========== MAIN CONTENT ========== -->
+<main>
+
+<!-- ABOUT -->
+<section class="section" data-reveal>
+  <h2 class="section-title">关于我</h2>
+  <div class="about-row">
+    <img class="about-photo" src="images/profile.jpg" alt="孙若曦">
+    <div class="about-text">
+      <p>你好，我是孙若曦！</p>
+      <p>我是深圳大学<strong>信息管理与信息系统</strong>专业的本科生，对数据分析、机器学习与金融科技充满热情。我善于将数据转化为洞察，用技术解决实际问题。</p>
+      <p><strong>🏆 高光成绩</strong></p>
+      <ul style="margin-left:1.2rem;margin-bottom:0.6rem;">
+        <li>第22届百度之星程序设计大赛 — 省赛金奖（人才赛道）</li>
+        <li>全国大学生统计建模大赛 — 广东省三等奖</li>
+      </ul>
+      <p><strong>💡 核心技能</strong></p>
+      <p>
+        <mark>C/C++</mark> <mark>Python</mark> <mark>R</mark>
+        <mark>机器学习</mark> <mark>数据可视化</mark> <mark>数据分析</mark>
+      </p>
+    </div>
+  </div>
+</section>
+
+<!-- PROJECTS -->
+<section class="section" data-reveal>
+  <h2 class="section-title">💻 项目经历</h2>
+
+  <div class="card card-row">
+    <div class="card-left">
+      <h4>员工离职分析 (IBM HR Analytics)</h4>
+      <div class="link"><a href="https://github.com/x4rbzjvmcx-oss" target="_blank">github.com/x4rbzjvmcx-oss</a></div>
+    </div>
+    <div class="card-right">
+      <div class="quote">Python + 多维可视化 | 1470名员工离职因素分析</div>
+      <p>对1470名员工的35个HR字段进行完整的数据清洗与探索性分析。运用Waffle图、桑基图、热力图、小提琴图等多种可视化方法，分析了员工离职的核心驱动因素，并提出了针对性的员工留存优化策略。</p>
+    </div>
+  </div>
+
+  <div class="card card-row">
+    <div class="card-left">
+      <h4>基于机器学习的促内需政策下商品补贴透支与服务消费承接研究</h4>
+      <div class="sub">全国大学生统计建模大赛 — 广东省三等奖</div>
+      <div class="date">2026.05</div>
+    </div>
+    <div class="card-right">
+      <div class="quote">LASSO-Logit 模型 | AUC 0.828 / 0.802</div>
+      <p>分析广东省2016-2025年月度消费数据，构建"历史规律识别—透支风险量化—补贴优化策略"研究框架。运用LASSO-Logit等模型识别消费补贴的透支风险，为促内需政策的精准制定提供数据支撑。</p>
+    </div>
+  </div>
+</section>
+
+<!-- AWARDS -->
+<section class="section" data-reveal>
+  <h2 class="section-title">🏆 荣誉奖项</h2>
+
+  <div class="card card-row">
+    <div class="card-left">
+      <h4>百度之星程序设计大赛</h4>
+      <div class="sub">省赛金奖（人才赛道）</div>
+      <div class="date">2025</div>
+    </div>
+    <div class="card-right">
+      <p>在省级选拔中脱颖而出，获得人才赛道金奖，展现扎实的算法设计与编程能力。</p>
+    </div>
+  </div>
+
+  <div class="card card-row">
+    <div class="card-left">
+      <h4>全国大学生统计建模大赛</h4>
+      <div class="sub">广东省三等奖</div>
+      <div class="date">2026</div>
+    </div>
+    <div class="card-right">
+      <p>基于机器学习的促内需政策研究获省级三等奖。运用LASSO-Logit等模型分析广东省消费数据，为政策优化提供量化参考。</p>
+    </div>
+  </div>
+</section>
+
+<!-- SOCIAL PRACTICE -->
+<section class="section" data-reveal>
+  <h2 class="section-title">🌱 社会实践</h2>
+
+  <div class="card card-row">
+    <div class="card-left">
+      <h4>"萤火虫计划"支教社会实践</h4>
+      <div class="sub">项目负责人</div>
+      <div class="date">2025.01</div>
+    </div>
+    <div class="card-right">
+      <div class="quote">广东省青年大学生"百千万工程"项目</div>
+      <p>带领5人团队赴四川成都开展为期7天的支教社会实践活动。负责项目整体策划、路线设计、任务分配与团队协调，保障活动顺利开展。</p>
+    </div>
+  </div>
+</section>
+
+<!-- EXPERIENCE -->
+<section class="section" data-reveal>
+  <h2 class="section-title">👥 学生工作</h2>
+
+  <div class="card card-row">
+    <div class="card-left">
+      <h4>深圳大学志愿者联合会助学分会</h4>
+      <div class="sub">支教部长</div>
+      <div class="date">至今</div>
+    </div>
+    <div class="card-right">
+      <p>负责品牌支教活动"萤火虫计划"的具体执行与协调工作。统筹志愿者招募培训、课程设计、活动排期与现场管理，保障支教活动顺利开展。</p>
+    </div>
+  </div>
+
+  <div class="card card-row">
+    <div class="card-left">
+      <h4>深圳大学金融科技学院党建工作委员会</h4>
+      <div class="sub">秘书部部长</div>
+      <div class="date">至今</div>
+    </div>
+    <div class="card-right">
+      <p>统筹协调高校系统、市级系统及省级系统的相关党务数据。负责文件起草、会议组织与信息报送，确保党务信息准确及时。</p>
+    </div>
+  </div>
+</section>
+
+<!-- EDUCATION -->
+<section class="section" data-reveal>
+  <h2 class="section-title">🎓 教育背景</h2>
+
+  <div class="card card-row">
+    <div class="card-left">
+      <h4>深圳大学</h4>
+      <div class="sub">信息管理与信息系统 本科</div>
+      <div class="date">2024 - 2028</div>
+    </div>
+    <div class="card-right">
+      <p><strong>技术课程</strong>：C/C++程序设计、数据结构、计算机网络、数据库系统、AI与机器学习</p>
+      <p><strong>商科课程</strong>：管理学原理、企业战略、信息系统战略、经济学、金融学</p>
+      <p><strong>数学课程</strong>：概率论与数理统计、线性代数、微积分</p>
+    </div>
+  </div>
+</section>
+
+</main>
+
+<!-- ========== FOOTER ========== -->
+<footer>
+  <p>孙若曦 — <a href="mailto:2024363037@mails.szu.edu.cn">2024363037@mails.szu.edu.cn</a></p>
+</footer>
+
+<!-- ========== BACK TO TOP ========== -->
+<button id="backToTop" onclick="window.scrollTo({top:0,behavior:'smooth'})">↑</button>
+
+<script>
+// Scroll reveal animation
+(function(){
+  var items = document.querySelectorAll('[data-reveal]');
+  if (!items.length) return;
+  items.forEach(function(el){
+    el.style.opacity = '0';
+    el.style.transform = 'translateY(25px)';
+  });
+  if (window.IntersectionObserver) {
+    var obs = new IntersectionObserver(function(entries){
+      entries.forEach(function(e){
+        if (e.isIntersecting) {
+          e.target.style.opacity = '1';
+          e.target.style.transform = 'translateY(0)';
+          obs.unobserve(e.target);
+        }
+      });
+    }, { threshold: 0.08 });
+    items.forEach(function(el){ obs.observe(el); });
+  } else {
+    items.forEach(function(el){
+      el.style.opacity = '1';
+      el.style.transform = 'translateY(0)';
+    });
+  }
+  // Back to top visibility
+  var btn = document.getElementById('backToTop');
+  window.addEventListener('scroll', function(){
+    if (window.scrollY > 300) btn.classList.add('visible');
+    else btn.classList.remove('visible');
+  });
+})();
+</script>
+
+</body>
+</html>
