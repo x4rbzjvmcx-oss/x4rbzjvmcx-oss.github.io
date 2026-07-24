@@ -105,7 +105,7 @@ content:
 footer_show_references: false
 
 # Build settings
-remote_theme: sproogen/resume-theme
+remote_theme: sproogen/resume-theme@v1.8.9
 sass:
   sass_dir: _sass
   style: compressed
