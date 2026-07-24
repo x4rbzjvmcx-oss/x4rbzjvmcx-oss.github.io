@@ -1,119 +1,27 @@
-# Site
-repository: x4rbzjvmcx-oss/x4rbzjvmcx-oss.github.io
-version: 3
-
-# Personal info
-name: "孙若曦"
-title: "信息管理与信息系统 | HR-AI 实习生"
+remote_theme: sproogen/resume-theme
+name: "Ruoxi Sun"
+title: "IMIS | HR-AI Intern"
 email: "2024363037@mails.szu.edu.cn"
-darkmode: false
 github_username: x4rbzjvmcx-oss
-
-# About Section
 about_profile_image: images/profile.jpg
 about_content: |
-  你好，我是孙若曦 👋
-
-  我是深圳大学**信息管理与信息系统**专业的本科生，对数据分析、机器学习与金融科技充满热情。我善于将数据转化为洞察，用技术解决实际问题。
-
-  **高光成绩**
-  - 第22届百度之星程序设计大赛 — 省赛金奖（人才赛道）
-  - 全国大学生统计建模大赛 — 广东省三等奖
-
-  **核心技能**
-  <mark>C/C++</mark> <mark>Python</mark> <mark>R</mark> <mark>机器学习</mark> <mark>数据可视化</mark> <mark>数据分析</mark>
-
-# Content sections
+  Student at Shenzhen University.
+  Skills: <mark>C/C++</mark>, <mark>Python</mark>
 content:
   - title: "Projects"
     layout: list
     content:
       - layout: left
-        title: "Employee Attrition Analysis (IBM HR Analytics)"
-        link: https://github.com/x4rbzjvmcx-oss
-        quote: >
-          Python + 多维可视化 | 对1470名员工的离职因素进行深度分析
+        title: "HR Analytics"
         description: |
-          对IBM HR数据集中的1470名员工、35个HR字段进行完整的数据清洗与探索性分析。运用Waffle图、桑基图、热力图、小提琴图等多种可视化方法，分析了员工离职的核心驱动因素，并提出了针对性的员工留存优化策略。
-
-          **技术栈**：Python、Pandas、Matplotlib、Seaborn、Plotly
-
-      - layout: left
-        title: "Subsidy & Service Consumption Research (ML)"
-        sub_title: "全国大学生统计建模大赛 — 广东省三等奖"
-        caption: "2026.05"
-        quote: >
-          LASSO-Logit 模型 | AUC 0.828 / 0.802
-        description: |
-          分析广东省2016-2025年月度消费数据，构建"历史规律识别—透支风险量化—补贴优化策略"研究框架。运用LASSO-Logit等机器学习模型识别消费补贴的透支风险，评估服务消费对商品消费的承接效果，为促内需政策的精准制定提供数据支撑。
-
-          **技术栈**：Python、Scikit-learn、LASSO回归、Logistic回归、时间序列分析
-
-  - title: "Awards"
-    layout: list
-    content:
-      - layout: left
-        title: "百度之星程序设计大赛"
-        sub_title: "省赛金奖（人才赛道）"
-        caption: "2025"
-        description: |
-          在省级选拔中脱颖而出，获得人才赛道金奖。
-
-      - layout: left
-        title: "全国大学生统计建模大赛"
-        sub_title: "广东省三等奖"
-        caption: "2026"
-        description: |
-          作品基于机器学习的促内需政策研究获省级三等奖。运用LASSO-Logit等模型分析广东省消费数据。
-
-  - title: "Social Practice"
-    layout: list
-    content:
-      - layout: left
-        title: "\"Youth Bright\" Social Practice"
-        sub_title: "项目负责人"
-        caption: "2025.01"
-        quote: >
-          广东省青年大学生"百千万工程"项目
-        description: |
-          带领5人团队赴四川成都开展为期7天的支教社会实践活动。负责项目整体策划、路线设计、任务分配与团队协调。
-
-  - title: "Experience"
-    layout: list
-    content:
-      - layout: left
-        title: "深圳大学志愿者联合会助学分会"
-        sub_title: "支教部长"
-        caption: "至今"
-        description: |
-          负责品牌支教活动"萤火虫计划"的具体执行与协调工作。统筹志愿者招募培训、课程设计、活动排期与现场管理。
-
-      - layout: left
-        title: "深圳大学金融科技学院党建工作委员会"
-        sub_title: "秘书部部长"
-        caption: "至今"
-        description: |
-          统筹协调高校、市级及省级系统的相关党务数据。负责文件起草、会议组织与信息报送，确保信息准确及时。
-
+          Analysis of employee attrition data.
   - title: "Education"
     layout: list
     content:
       - layout: left
         title: "Shenzhen University"
-        caption: "2024 - 2028"
-        sub_title: "信息管理与信息系统 本科"
+        sub_title: "IMIS"
         description: |
-          **技术课程**：C/C++、数据结构、计算机网络、数据库系统、数据可视化、AI与机器学习
-          **商科课程**：管理学原理、企业战略、信息系统战略、经济学、金融学、商务英语
-          **数学课程**：概率论与数理统计、线性代数、微积分
-
-# Footer
-footer_show_references: false
-
-# Build settings
-remote_theme: sproogen/resume-theme
-sass:
-  sass_dir: _sass
-  style: compressed
+          BSc in Information Management.
 plugins:
   - jekyll-seo-tag
