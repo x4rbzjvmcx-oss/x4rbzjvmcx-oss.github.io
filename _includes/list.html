@@ -1,4 +1,4 @@
-{% for section in site.content %}
+{% for section in site.sections %}
 <div class="container list-container">
   <h3 id="section-{{ forloop.index }}">{{ section.title }}</h3>
   {% for item in section.content %}

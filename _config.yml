@@ -24,7 +24,7 @@ about_content: |
   <mark>C/C++</mark> <mark>Python</mark> <mark>R</mark> <mark>机器学习</mark> <mark>数据可视化</mark> <mark>数据分析</mark>
 
 # Content sections
-content:
+sections:
   - title: "Projects"
     layout: list
     content:
