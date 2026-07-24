@@ -1,0 +1,21 @@
+{% for section in site.content %}
+<div class="container list-container">
+  <h3 id="section-{{ forloop.index }}">{{ section.title }}</h3>
+  {% for item in section.content %}
+  <div class="row clearfix layout layout-left border-no">
+    <div class="col-xs-12 col-sm-4 col-md-3 col-print-12 details">
+      <h4>{{ item.title }}</h4>
+      {% if item.sub_title %}<p><b>{{ item.sub_title }}</b></p>{% endif %}
+      {% if item.caption %}<p>{{ item.caption }}</p>{% endif %}
+      {% if item.link %}
+      <a href="{{ item.link }}" target="_blank" class="link">{{ item.link }}</a>
+      {% endif %}
+    </div>
+    <div class="col-xs-12 col-sm-8 col-md-9 col-print-12 content">
+      {% if item.quote %}<p class="quote">{{ item.quote }}</p>{% endif %}
+      {{ item.description | markdownify }}
+    </div>
+  </div>
+  {% endfor %}
+</div>
+{% endfor %}
