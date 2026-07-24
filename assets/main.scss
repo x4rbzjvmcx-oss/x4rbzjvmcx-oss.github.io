@@ -85,3 +85,54 @@
      font-size: 1.5rem;
    }
  }
+ 
+ /* 回到顶部按钮 */
+ .back-to-top {
+   position: fixed;
+   bottom: 30px;
+   right: 30px;
+   z-index: 999;
+   transition: all 0.3s ease;
+ }
+ 
+ /* 区块标题样式增强 */
+ .section-title h2 {
+   position: relative;
+   display: inline-block;
+   padding-bottom: 8px;
+ }
+ 
+ .section-title h2::after {
+   content: '';
+   position: absolute;
+   bottom: 0;
+   left: 0;
+   width: 60px;
+   height: 3px;
+   background: #6ABF8B;
+   border-radius: 2px;
+ }
+ 
+ /* 项目卡片圆角 */
+ .layout-left {
+   border-radius: 8px;
+   padding: 20px;
+   margin-bottom: 16px;
+   transition: transform 0.2s ease, box-shadow 0.2s ease;
+ }
+ 
+ .layout-left:hover {
+   transform: translateY(-3px);
+   box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+ }
+ 
+ /* 响应式调整 */
+ @media (max-width: 768px) {
+   .layout-left {
+     padding: 12px;
+   }
+   .layout-left:hover {
+     transform: none;
+     box-shadow: none;
+   }
+ }
