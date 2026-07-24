@@ -1,0 +1,132 @@
+# Site
+repository: x4rbzjvmcx-oss/x4rbzjvmcx-oss.github.io
+favicon: images/favicon.ico
+
+# Content configuration version
+version: 2
+
+# Personal info
+name: 孙若曦
+title: 信息管理与信息系统 &#183; 前10% | 求职 HR-AI / 数据分析实习生
+email: 2024363037@mails.szu.edu.cn
+website: www.github.com/x4rbzjvmcx-oss
+
+# Dark Mode (true/false/never)
+darkmode: false
+
+# Social links
+github_username: x4rbzjvmcx-oss
+# linkedin_username:
+
+# Additional icon links
+# additional_links:
+
+# Google Analytics and Tag Manager
+# Using more than one of these may cause issues with reporting
+# gtm: "GTM-0000000"
+# gtag: "UA-00000000-0"
+# google_analytics: "UA-00000000-0"
+
+# About Section
+# about_title: About Me
+about_profile_image: images/profile.jpg
+about_content: |
+  我是孙若曦，深圳大学信息管理与信息系统专业本科生（前10%），兼具技术、管理与数据分析基础的复合型背景。
+
+  我擅长运用数据分析和机器学习方法解决实际问题，在百度之星程序设计大赛中获得省赛金奖，全国大学生统计建模大赛获得省赛三等奖。
+
+  我是深圳大学志愿者联合会助学分会支教部长，负责「萤火虫计划」支教活动的执行与协调；同时担任金融科技学院党建工作委员会秘书部部长，统筹各级系统党务数据。
+
+  最熟练的技能：<mark>C/C++</mark>、<mark>数据可视化</mark>、<mark>机器学习</mark>
+
+content:
+  - title: Projects
+    layout: list
+    content:
+      - layout: left
+        title: 员工流失风险可视化分析（IBM HR Analytics）
+        link: github.com/x4rbzjvmcx-oss
+        additional_links:
+          - title: x4rbzjvmcx-oss
+            icon: fab fa-github
+            url: github.com/x4rbzjvmcx-oss
+        quote: >
+          Python + 多维可视化 | 发现16.1%流失率
+        description: |
+          基于Kaggle IBM HR Analytics Employee Attrition Dataset，使用Python对1470名员工、35个HR字段进行数据清洗和探索性分析。从HR业务视角构造分析变量，使用Waffle Chart、Sankey Diagram、Heatmap、Violin Plot等多维可视化方法，总结高流失风险画像并提出员工保留建议。
+
+      - layout: left
+        title: 商品补贴透支与服务消费承接研究
+        sub_title: 全国大学生统计建模大赛 省赛三等奖
+        caption: 2026.05
+        quote: >
+          LASSO-Logit模型 | AUC 0.828 / 0.802
+        description: |
+          围绕"商品消费补贴是否会造成需求透支、服务消费能否有效承接"问题，基于广东省2016.01-2025.12月度消费数据，构建"历史特征识别—风险量化预测—动态补贴优化"研究框架。承担数据预处理、变量构建、商品透支风险指数RIG与服务承接不足风险指数RIS构建。
+
+      - layout: left
+        title: "青年炽亮"社会实践
+        sub_title: 项目负责人
+        caption: 2025.01
+        quote: >
+          广东省青年大学生"百千万工程"
+        description: |
+          统筹5人团队在四川省成都市开展为期7天的社会实践，负责前期策划、路线设计、成员分工、物料准备、现场协调、每日复盘与成果整理。参与茂名市高州市特色产业（茶叶、荔枝）调研，量化农户资金需求与还款能力，设计差异化小额信贷优化建议。
+
+  - title: Experience
+    layout: list
+    content:
+      - layout: left
+        title: 深圳大学志愿者联合会助学分会
+        sub_title: 支教部长
+        caption: 至今
+        quote: >
+          "萤火虫计划"支教活动执行与协调
+        description: |
+          负责分会支教活动"萤火虫计划"的具体执行与协调工作，保障活动的顺利开展。
+
+      - layout: left
+        title: 深圳大学金融科技学院党建工作委员会
+        sub_title: 秘书部部长
+        caption: 至今
+        quote: >
+          统筹高校、市、省级党务数据
+        description: |
+          统筹协调高校系统、市级系统及省级系统的相关党务数据，确保信息准确。
+
+  - title: Education
+    layout: list
+    content:
+      - layout: left
+        title: 深圳大学
+        caption: 2024 - 2028（预计）
+        sub_title: 信息管理与信息系统 &#183; 本科 &#183; 前10%
+        quote: >
+          主修课程涵盖技术、商科与数学三大方向
+        description: |
+          **技术类**：C/C++程序设计基础、数据结构与算法、计算机网络、数据库系统、数据可视化、人工智能与机器学习
+
+          **商科类**：管理学原理、企业战略、信息系统战略与规划、宏微观经济学、金融学、商务英语
+
+          **数学类**：概率论与数理统计、线性代数、高等数学
+
+  - title: A Little More About Me
+    layout: text
+    content: |
+      除了学习和工作，我还在以下领域持续投入：
+      - 编程竞赛与算法训练
+      - 数据可视化与数据故事叙述
+      - 志愿者服务与公益支教
+
+# Footer
+footer_show_references: false
+
+# Build settings
+remote_theme: sproogen/resume-theme
+
+sass:
+  sass_dir: _sass
+  style: compressed
+
+plugins:
+ - jekyll-seo-tag
