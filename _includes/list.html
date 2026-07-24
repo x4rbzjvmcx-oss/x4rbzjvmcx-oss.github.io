@@ -1,21 +1,116 @@
-{% for section in site.sections %}
+<!-- ======== 项目经历 ======== -->
 <div class="container list-container">
-  <h3 id="section-{{ forloop.index }}">{{ section.title }}</h3>
-  {% for item in section.content %}
+  <h3 id="projects">💻 项目经历</h3>
+
   <div class="row clearfix layout layout-left border-no">
     <div class="col-xs-12 col-sm-4 col-md-3 col-print-12 details">
-      <h4>{{ item.title }}</h4>
-      {% if item.sub_title %}<p><b>{{ item.sub_title }}</b></p>{% endif %}
-      {% if item.caption %}<p>{{ item.caption }}</p>{% endif %}
-      {% if item.link %}
-      <a href="{{ item.link }}" target="_blank" class="link">{{ item.link }}</a>
-      {% endif %}
+      <h4>员工离职分析 (IBM HR Analytics)</h4>
+      <a href="https://github.com/x4rbzjvmcx-oss" target="_blank" class="link">github.com/x4rbzjvmcx-oss</a>
     </div>
     <div class="col-xs-12 col-sm-8 col-md-9 col-print-12 content">
-      {% if item.quote %}<p class="quote">{{ item.quote }}</p>{% endif %}
-      {{ item.description | markdownify }}
+      <p class="quote">Python + 多维可视化 | 1470名员工离职因素分析</p>
+      <p>对1470名员工的35个HR字段进行完整的数据清洗与探索性分析。运用Waffle图、桑基图、热力图、小提琴图等多种可视化方法，分析了员工离职的核心驱动因素，并提出了针对性的员工留存优化策略。</p>
     </div>
   </div>
-  {% endfor %}
+
+  <div class="row clearfix layout layout-left border-no">
+    <div class="col-xs-12 col-sm-4 col-md-3 col-print-12 details">
+      <h4>基于机器学习的促内需政策下商品补贴透支与服务消费承接研究</h4>
+      <p><b>全国大学生统计建模大赛 — 广东省三等奖</b></p>
+      <p>2026.05</p>
+    </div>
+    <div class="col-xs-12 col-sm-8 col-md-9 col-print-12 content">
+      <p class="quote">LASSO-Logit 模型 | AUC 0.828 / 0.802</p>
+      <p>分析广东省2016-2025年月度消费数据，构建"历史规律识别—透支风险量化—补贴优化策略"研究框架。运用LASSO-Logit等模型识别消费补贴的透支风险，为政策制定提供数据支撑。</p>
+    </div>
+  </div>
 </div>
-{% endfor %}
+
+<!-- ======== 荣誉奖项 ======== -->
+<div class="container list-container">
+  <h3 id="awards">🏆 荣誉奖项</h3>
+
+  <div class="row clearfix layout layout-left border-no">
+    <div class="col-xs-12 col-sm-4 col-md-3 col-print-12 details">
+      <h4>百度之星程序设计大赛</h4>
+      <p><b>省赛金奖（人才赛道）</b></p>
+      <p>2025</p>
+    </div>
+    <div class="col-xs-12 col-sm-8 col-md-9 col-print-12 content">
+      <p>获得人才赛道金奖，展现扎实的算法设计与编程能力。</p>
+    </div>
+  </div>
+
+  <div class="row clearfix layout layout-left border-no">
+    <div class="col-xs-12 col-sm-4 col-md-3 col-print-12 details">
+      <h4>全国大学生统计建模大赛</h4>
+      <p><b>广东省三等奖</b></p>
+      <p>2026</p>
+    </div>
+    <div class="col-xs-12 col-sm-8 col-md-9 col-print-12 content">
+      <p>基于机器学习的促内需政策研究获省级三等奖，运用LASSO-Logit等模型分析消费数据。</p>
+    </div>
+  </div>
+</div>
+
+<!-- ======== 社会实践 ======== -->
+<div class="container list-container">
+  <h3 id="practice">🌱 社会实践</h3>
+
+  <div class="row clearfix layout layout-left border-no">
+    <div class="col-xs-12 col-sm-4 col-md-3 col-print-12 details">
+      <h4>"萤火虫计划"支教社会实践</h4>
+      <p><b>项目负责人</b></p>
+      <p>2025.01</p>
+    </div>
+    <div class="col-xs-12 col-sm-8 col-md-9 col-print-12 content">
+      <p class="quote">广东省青年大学生"百千万工程"项目</p>
+      <p>带领5人团队赴四川成都开展为期7天的支教社会实践活动，负责项目整体策划、路线设计、任务分配与团队协调。</p>
+    </div>
+  </div>
+</div>
+
+<!-- ======== 学生工作 ======== -->
+<div class="container list-container">
+  <h3 id="experience">👥 学生工作</h3>
+
+  <div class="row clearfix layout layout-left border-no">
+    <div class="col-xs-12 col-sm-4 col-md-3 col-print-12 details">
+      <h4>深圳大学志愿者联合会助学分会</h4>
+      <p><b>支教部长</b></p>
+      <p>至今</p>
+    </div>
+    <div class="col-xs-12 col-sm-8 col-md-9 col-print-12 content">
+      <p>负责"萤火虫计划"的具体执行与协调工作，统筹志愿者招募培训、课程设计、活动排期与现场管理。</p>
+    </div>
+  </div>
+
+  <div class="row clearfix layout layout-left border-no">
+    <div class="col-xs-12 col-sm-4 col-md-3 col-print-12 details">
+      <h4>深圳大学金融科技学院党建工作委员会</h4>
+      <p><b>秘书部部长</b></p>
+      <p>至今</p>
+    </div>
+    <div class="col-xs-12 col-sm-8 col-md-9 col-print-12 content">
+      <p>统筹协调高校、市级及省级系统党务数据，负责文件起草、会议组织与信息报送。</p>
+    </div>
+  </div>
+</div>
+
+<!-- ======== 教育背景 ======== -->
+<div class="container list-container">
+  <h3 id="education">🎓 教育背景</h3>
+
+  <div class="row clearfix layout layout-left border-no">
+    <div class="col-xs-12 col-sm-4 col-md-3 col-print-12 details">
+      <h4>深圳大学</h4>
+      <p><b>信息管理与信息系统 本科</b></p>
+      <p>2024 - 2028</p>
+    </div>
+    <div class="col-xs-12 col-sm-8 col-md-9 col-print-12 content">
+      <p><b>技术课程</b>：C/C++、数据结构、计算机网络、数据库系统、AI与机器学习</p>
+      <p><b>商科课程</b>：管理学原理、企业战略、信息系统战略、经济学、金融学</p>
+      <p><b>数学课程</b>：概率论与数理统计、线性代数、微积分</p>
+    </div>
+  </div>
+</div>
