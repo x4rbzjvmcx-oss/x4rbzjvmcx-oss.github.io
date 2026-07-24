@@ -1,0 +1,87 @@
+---
+ # Front matter comment to ensure Jekyll properly reads file.
+---
+
+ @import 'modern-resume-theme';
+ 
+ /* 自定义配色：薄荷绿 + 清透蓝 + 暖白 */
+ 
+ /* 主色 - 链接和强调 */
+ a, a:focus, a:hover {
+   color: #4A90D9;
+ }
+ 
+ /* 按钮样式 */
+ .btn-primary {
+   background-color: #6ABF8B;
+   border-color: #6ABF8B;
+ }
+ 
+ .btn-primary:hover {
+   background-color: #5DAE7A;
+   border-color: #5DAE7A;
+ }
+ 
+ /* 页面背景 */
+ body {
+   background-color: #F8F9FA;
+ }
+ 
+ /* 头部/标题区域 */
+ .header-wrapper {
+   background: linear-gradient(135deg, #6ABF8B 0%, #4A90D9 100%) !important;
+ }
+ 
+ .header-wrapper .name,
+ .header-wrapper .title,
+ .header-wrapper .contact {
+   color: #FFFFFF;
+ }
+ 
+ /* 区块标题 */
+ .section-title h2 {
+   color: #2D3436;
+   border-bottom: 3px solid #6ABF8B;
+ }
+ 
+ /* 卡片和内容区 */
+ .card, .content-card, .project-card {
+   background-color: #FFFFFF;
+   border: 1px solid #E8ECF1;
+   border-radius: 8px;
+ }
+ 
+ /* 图标颜色 */
+ .fab, .fas, .far {
+   color: #4A90D9;
+ }
+ 
+ /* 引用/高亮 */
+ mark {
+   background-color: #D4EDDA;
+   color: #2D3436;
+   padding: 0.1em 0.3em;
+   border-radius: 3px;
+ }
+ 
+ /* 页脚 */
+ footer, .footer {
+   background-color: #2D3436;
+   color: #F8F9FA;
+ }
+ 
+ /* 时间线/间隔 */
+ .timeline-item {
+   border-left: 2px solid #6ABF8B;
+ }
+ 
+ /* 移动端适配 */
+ @media (max-width: 768px) {
+   .header-wrapper {
+     padding: 2rem 1rem !important;
+   }
+   
+   .section-title h2 {
+     font-size: 1.5rem;
+   }
+ }
