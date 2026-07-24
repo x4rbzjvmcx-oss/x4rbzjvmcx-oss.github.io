@@ -31,7 +31,7 @@
  
  # Content sections
  content:
-   - title: 💻 项目经历
+   - title: "项目经历"
      layout: list
      content:
        - layout: left
@@ -55,7 +55,7 @@
  
            **技术栈**：Python、Scikit-learn、LASSO回归、Logistic回归、时间序列分析
  
-   - title: 🏆 荣誉奖项
+   - title: "荣誉奖项"
      layout: list
      content:
        - layout: left
@@ -72,7 +72,7 @@
          description: |
            作品《基于机器学习的促内需政策下商品补贴透支与服务消费承接研究》获省级三等奖。运用 LASSO-Logit 等模型分析广东省消费数据，为政策优化提供量化参考。
  
-   - title: 🌱 社会实践
+   - title: "社会实践"
      layout: list
      content:
        - layout: left
@@ -84,7 +84,7 @@
          description: |
            带领5人团队赴四川成都开展为期7天的支教社会实践活动。负责项目整体策划、路线设计、任务分配与团队协调，保障活动顺利开展。在实践中锻炼了统筹规划与团队协作能力。
  
-   - title: 👥 学生工作
+   - title: "学生工作"
      layout: list
      content:
        - layout: left
@@ -101,7 +101,7 @@
          description: |
            统筹协调高校系统、市级系统及省级系统的相关党务数据。负责文件起草、会议组织与信息报送，确保党务信息准确及时，累计处理各类党务文件与数据报表。
  
-   - title: 🎓 教育背景
+   - title: "教育背景"
      layout: list
      content:
        - layout: left
